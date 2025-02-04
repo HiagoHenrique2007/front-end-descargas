@@ -12,7 +12,7 @@ const inputs = document.querySelectorAll('input');
 const getDescarga = async (code) => {
 
   try {
-    const response = await fetch(`http://192.168.2.8:3000/descarga-${code}`);
+    const response = await fetch(`https://api-consulta-de-descargas.onrender.com/descarga-${code}`);
     const descaga = await response.json();
     console.log(descaga);
     return descaga;
