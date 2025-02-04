@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Descarga</title>
+</head>
+<body>
+    <h1>
+        <span>
+            Consulta de Descarga!
+        </span>
+    </h1>
+    <div>
+        <div id="inputs">
+            <label for="code">
+                <span>
+                    Codigo da Descarga
+                </span>
+            </label>
+            <input type="text" name="code" placeholder="Codigo" maxlength="7">
+            <label id="label-2" for="porcentagem">
+                <span>
+                    Porcentagem
+                </span>
+            </label>
+            <input type="number" name="porcentagem" placeholder="Porcentagem">
+            <button type="submit">
+                <span>
+                    Consultar
+                </span>
+            </button>
+        </div>
+    </div>
+    <div id="spacing"></div>
+    <div>
+        <div id="result-screen">
+            <h2>
+                <span>
+                    Resultado
+                </span>
+            </h2>
+            <div id="result">
+
+                <div class="result-boxs" id="code">
+                    <h3 id="code-display">
+                        nenhum
+                    </h3>
+                    <span class="span">
+                        Codigo
+                    </span>
+                </div>
+                <div id="price">
+                    <h3 id="price-display">
+                        R$ 0,00
+                    </h3>
+                    <span class="span">
+                        Preço
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
